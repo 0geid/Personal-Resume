@@ -1,0 +1,279 @@
+html {
+    width: 100%;
+    height: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    margin: 0;
+}
+
+/* Refere-se ao Painel de navegação */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #243A69;
+    box-shadow: 0px 0px 5px 2px;
+}
+ul p {
+    color: #f1f1f1;
+    margin: 10px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16pc;
+    text-decoration: none;
+    transition: 0.3s
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #d4cdc5;
+}
+
+li.dropdown {
+    display: inline-block;   
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; 
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; 
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    transition: 0.3s
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 300px;
+    box-shadow: 0px 0px 2px 1px;
+    transition: 10s;
+}
+
+/* Carossel, SlideShow Container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    border: solid 1px black;
+}
+
+/* Next & previus buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #d4cdc5;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Posição de botões seguinte e voltar*/
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* hover para os botões e degradê no background*/
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/* legenda */
+.text {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+/* numeração das imagens*/
+.numbertext {
+    color: black;
+     font-size: 12px;
+     padding: 8px 12px;
+     position: absolute;
+     top: 0;
+}
+/*pontos detalhes etc...*/
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+/* Animação de passagem*/
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: .1}
+}
+
+/* Para telas Menores*/
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {font-size: 11px;}
+}
+/*Conteiner Dois */
+.container-dois {
+    background-color: #243A69;
+    color: #f1f1f1;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0px 0px 5px 0px;
+}
+.container-dois h2 {
+    text-align: center;
+    color: #f1f1f1;
+}
+.container-dois p {
+    margin: 40px;  
+}
+/* Barra de progressos nas linguas */
+.image-um img {
+    float: left;
+    padding: 10px 0px 0px 10px;
+    width: 6%;
+    height: auto;
+}
+.myprogress {
+    margin: 50px;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+}
+.myprogress h1{
+    text-align: left;
+
+}
+.mybar {
+    width: 60%;
+    height: 30px;
+    background-color:#d4cdc5 ;
+    text-align: center;
+    line-height: 30px;
+    color: #191013;
+    box-shadow: #717171 1px 1px 50px 1px;
+}
+/* Barra CSS */
+.image-dois img {
+    float: right;
+    width: 6%;
+    height: auto;
+}
+.myprogress-dois {
+    margin: 50px;
+    width: 100%;
+    padding: 0px 10px 10px 650px;
+}
+.myprogress-dois h1 {
+    text-align: right;
+}
+.mybar-dois {
+    width: 60%;
+    height: 30px;
+    background-color:#d4cdc5 ;
+    text-align: center;
+    line-height: 30px;
+    color: #191013;
+    box-shadow: #717171 1px 1px 50px 1px;
+}
+/*Barra JavaScript */
+.image-tres img {
+    float: left;
+    width: 6%;
+    height: auto;
+}
+.myprogress-tres {
+    margin: 50px;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+}
+.myprogress-tres h1 {
+    text-align: left;
+
+}
+.mybar-tres {
+    width: 60%;
+    height: 30px;
+    background-color:#d4cdc5 ;
+    text-align: center;
+    line-height: 30px;
+    color: #191013;
+    box-shadow: #717171 1px 1px 50px 1px;
+}
+/* Barra github */
+.image-quatro img {
+    float: right;
+    width: 10%;
+    height: auto;
+    padding: px 0px 0px 0px;
+}
+.myprogress-quatro {
+    margin: 50px;
+    width: 100%;
+    padding: 20px 10px 10px 650px;
+}
+.myprogress-quatro h1 {
+    float: right;
+}
+.mybar-quatro {
+    width: 60%;
+    height: 30px;
+    background-color:#d4cdc5 ;
+    text-align: center;
+    line-height: 30px;
+    color: #191013;
+    box-shadow: #717171 1px 1px 50px 1px;
+}
+
+
+
+/* Criação do efeito Parallax*/
+.parallax {
+    background-image: url(https://wallpaperaccess.com/full/6208977.jpg);
+
+    min-height: 800px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Terceiro Painel De informações*/
